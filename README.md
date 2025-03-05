@@ -1,6 +1,10 @@
-## Spherical Dense-Text-to-Image Synthesis
+# Spherical Dense-Text-to-Image Synthesis
+[Timon Winter](https://github.com/Suecra), [Stanislav Frolov](https://stanifrolov.github.io/), [Brian Bernhard Moser](http://brian-moser.de/), [Andreas Dengel](https://www.dfki.uni-kl.de/~dengel/)
 
-# Mask Preprocessing
+[![Project](https://suecra.github.io/)]
+[![arXiv](https://arxiv.org/abs/2502.12691)]
+
+## Mask Preprocessing
 ```python
 def preprocess_mask(self, mask_path, h, w, device):
     mask = np.array(Image.open(mask_path).convert("L"))
@@ -17,7 +21,7 @@ def preprocess_mask(self, mask_path, h, w, device):
     return temp
 ```
 
-# Bootstrapping Backgrounds
+## Bootstrapping Backgrounds
 ```python
 def get_random_background(self, n_samples):
     # sample random background with a constant rgb value
@@ -25,7 +29,7 @@ def get_random_background(self, n_samples):
     return torch.cat([self.encode_imgs(bg.unsqueeze(0)) for bg in backgrounds])
 ```
 
-# StitchDiffusion Modification
+## StitchDiffusion Modification
 ```python
 ##########################
 ## MultiStitchDiffusion ##
