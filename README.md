@@ -153,3 +153,8 @@ image = image[:, :, :, 512:1536]
 # we always cast to float32 as this does not cause significant overhead and is compatible with bfloa16
 image = image.cpu().permute(0, 2, 3, 1).float().numpy()
 ```
+
+## DSynView reference images
+```python
+python reference_images.py --seed_start 0 --seed_end 167
+```
