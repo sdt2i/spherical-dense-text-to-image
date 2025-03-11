@@ -1,8 +1,7 @@
 # Spherical Dense-Text-to-Image Synthesis
 [Timon Winter](https://github.com/Suecra), [Stanislav Frolov](https://stanifrolov.github.io/), [Brian Bernhard Moser](http://brian-moser.de/), [Andreas Dengel](https://www.dfki.uni-kl.de/~dengel/)
 
-[Project](https://suecra.github.io/)
-[arXiv](https://arxiv.org/abs/2502.12691)
+[Project Page](https://sdt2i.github.io/) | [Paper](https://arxiv.org/abs/2502.12691)
 
 ## Mask Preprocessing
 ```python
